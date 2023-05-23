@@ -38,4 +38,8 @@ public class Navbar {
     private void goToSignIn() throws IOException {
         App.setRoot("signin");
     }
+
+    public void testCommit() {
+        
+    }
 }
