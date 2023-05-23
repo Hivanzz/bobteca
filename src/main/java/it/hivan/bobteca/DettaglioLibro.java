@@ -1,6 +1,7 @@
 package it.hivan.bobteca;
 
 import java.io.IOException;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.MenuBar;
 import javafx.scene.text.Text;
@@ -61,4 +62,8 @@ public class DettaglioLibro {
         descrizioneLibro.setText(libro.getDescrizione());
     }
     
+    @FXML
+    private void modificaLibro() throws IOException {
+        App.setRoot("modifica_libro/modifica_libro");
+    }
 }

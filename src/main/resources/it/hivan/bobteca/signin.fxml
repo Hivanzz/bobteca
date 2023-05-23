@@ -45,7 +45,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="786.0" styleClass="base" stylesheets="@login.css" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.hivan.bobteca.UserManager">
    <children>
-      <fx:include source="navbar/navbar.fxml" />
+      <!--<fx:include source="navbar/navbar.fxml" />-->
       <Text fill="WHITE" layoutX="160.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titolo" text="Signin" wrappingWidth="125.13671875">
          <font>
             <Font size="40.0" />

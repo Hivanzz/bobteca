@@ -14,10 +14,7 @@ public class Navbar {
 
     @FXML
     private void goToFeedback() throws IOException {
-        Libro libro = new Libro("Il nome del vento", "Patrick Rothfuss", "Fantasy", "01/03/2007",
-                                "9788804564512", "Mondadori", "Copertina rigida", 662, "Descrizione del libro.");
-        //controller.modificaValori(libro);
-        App.setRoot("nuovo_libro_specifico/nuovo_libro_specifico");
+        App.setRoot("feedback/feed");
     }
 
     @FXML

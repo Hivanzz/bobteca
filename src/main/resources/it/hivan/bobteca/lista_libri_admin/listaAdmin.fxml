@@ -14,33 +14,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="783.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="783.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@listaAdmin.css" fx:controller="it.hivan.bobteca.DettaglioLibro">
    <children>
-      <MenuBar layoutX="20.0" layoutY="22.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
-         <menus>
-            <Menu mnemonicParsing="false" text="Main">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Home" />
-                  <MenuItem mnemonicParsing="false" text="Feedback" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Account">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Cambia Email" />
-                  <MenuItem mnemonicParsing="false" text="Cambia Password" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Account Admin">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Gestione Utenti" />
-                  <MenuItem mnemonicParsing="false" text="Gestione libri" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-         </menus>
-      </MenuBar>
+   <fx:include source="../navbar/navbar.fxml" />
       <GridPane layoutX="200.0" layoutY="155.0" prefWidth="848.0" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -65,7 +41,7 @@
                   </Text>
                   <Text fill="#30543e" layoutX="239.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autore: Giovanni Storti" />
                   <Text fill="#30543e" layoutX="239.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data di uscita: 12/12/2012" />
-                  <Button layoutX="255.0" layoutY="161.0" mnemonicParsing="false" styleClass="bottone" text="Modificalo" />
+                  <Button layoutX="255.0" layoutY="161.0" mnemonicParsing="false" styleClass="bottone" text="Modificalo" onAction="#modificaLibro"/>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="card">
@@ -82,7 +58,7 @@
                   </Text>
                   <Text fill="#30543e" layoutX="239.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autore: Giovanni Storti" />
                   <Text fill="#30543e" layoutX="239.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data di uscita: 12/12/2012" />
-                  <Button layoutX="255.0" layoutY="161.0" mnemonicParsing="false" styleClass="bottone" text="Modificalo" />
+                  <Button layoutX="255.0" layoutY="161.0" mnemonicParsing="false" styleClass="bottone" text="Modificalo" onAction="#modificaLibro"/>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="card" GridPane.columnIndex="1">
@@ -99,7 +75,7 @@
                   </Text>
                   <Text fill="#30543e" layoutX="239.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autore: Giovanni Storti" />
                   <Text fill="#30543e" layoutX="239.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data di uscita: 12/12/2012" />
-                  <Button layoutX="249.0" layoutY="160.0" mnemonicParsing="false" styleClass="bottone" text="Modificalo" />
+                  <Button layoutX="249.0" layoutY="160.0" mnemonicParsing="false" styleClass="bottone" text="Modificalo" onAction="#modificaLibro"/>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="card" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -116,7 +92,7 @@
                   </Text>
                   <Text fill="#30543e" layoutX="239.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autore: Giovanni Storti" />
                   <Text fill="#30543e" layoutX="239.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data di uscita: 12/12/2012" />
-                  <Button layoutX="258.0" layoutY="159.0" mnemonicParsing="false" styleClass="bottone" text="Modificalo" />
+                  <Button layoutX="258.0" layoutY="159.0" mnemonicParsing="false" styleClass="bottone" text="Modificalo" onAction="#modificaLibro"/>
                </children>
             </AnchorPane>
          </children>

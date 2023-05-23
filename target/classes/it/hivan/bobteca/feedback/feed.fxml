@@ -10,33 +10,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@feed.css">
    <children>
-      <MenuBar layoutX="10.0" layoutY="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
-         <menus>
-            <Menu mnemonicParsing="false" text="Main">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Home" />
-                  <MenuItem mnemonicParsing="false" text="Feedback" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Account">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Cambia Email" />
-                  <MenuItem mnemonicParsing="false" text="Cambia Password" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Account Admin">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Gestione Utenti" />
-                  <MenuItem mnemonicParsing="false" text="Gestione libri" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-         </menus>
-      </MenuBar>
+      <fx:include source="../navbar/navbar.fxml" />
       <Text fill="#543046" layoutX="14.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invia un feedback">
          <font>
             <Font name="System Bold" size="32.0" />
