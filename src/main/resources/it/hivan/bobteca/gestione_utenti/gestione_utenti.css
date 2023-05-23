@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-VariableFont_slnt\,wght.ttf');
+}
+*{
+    -fx-font-family: 'Inter';
+}
+
+
+.searchbar{
+    -fx-background-color: #30543e37;
+    -fx-background-radius: 20px 0 0 20px;
+    -fx-border-width: 0;
+    -fx-prompt-text-fill:rgb(52, 51, 51);
+}
+.searchbutton{
+    -fx-background-color: #5f485665;
+    -fx-background-radius: 0 20px 20px 0;
+}
+.panel{
+    -fx-background-color: #30543e37;
+    -fx-background-radius:20px;
+}
+.segnalazione{
+    -fx-background-color: green;
+    -fx-background-radius: 20px;
+}
+.ban{
+    -fx-background-color: red;
+    -fx-background-radius: 20px;
+}
+
+.avvisa{
+    -fx-background-color: rgb(255, 174, 0);
+    -fx-background-radius: 20px;
+}
+.menu-bar {
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 1);
+}
+
+
+.menu-bar .label {
+    -fx-text-fill: #30543e;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+}

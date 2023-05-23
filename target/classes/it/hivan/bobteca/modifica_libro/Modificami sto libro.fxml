@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1007.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar layoutX="20.0" layoutY="22.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Main">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Home" />
+                  <MenuItem mnemonicParsing="false" text="Feedback" />
+                  <MenuItem mnemonicParsing="false" text="Esci" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Account">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Cambia Email" />
+                  <MenuItem mnemonicParsing="false" text="Cambia Password" />
+                  <MenuItem mnemonicParsing="false" text="Esci" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Account Admin">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Gestione Utenti" />
+                  <MenuItem mnemonicParsing="false" text="Gestione libri" />
+                  <MenuItem mnemonicParsing="false" text="Esci" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <ImageView fitHeight="519.0" fitWidth="342.0" layoutX="34.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 50;" styleClass="albatros">
+         <image>
+            <Image url="@../immagini/libro-maccio-capatonda-libro-2-modified.png" />
+         </image>
+      </ImageView>
+      <Text fill="#30543e" layoutX="462.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Libro 2. Racconti da mare" textAlignment="CENTER" wrappingWidth="476.404296875">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Text>
+      <Text fill="#522f44" layoutX="409.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autore:" wrappingWidth="78.212890625">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#522f44" layoutX="409.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genere:" wrappingWidth="78.212890625">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#522f44" layoutX="408.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pubblicazione:" wrappingWidth="166.912109375">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#522f44" layoutX="408.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN:" wrappingWidth="59.912109375">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#522f44" layoutX="730.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editore:" wrappingWidth="78.212890625">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#522f44" layoutX="730.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formato:" wrappingWidth="91.912109375">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#522f44" layoutX="730.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pagine:" wrappingWidth="78.173828125">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="116.0" layoutY="600.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="179.0" styleClass="bottone" text="Cambia immagine" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Pane layoutX="401.0" layoutY="333.0" prefHeight="145.0" prefWidth="598.0" styleClass="descrizione">
+         <children>
+            <Text fill="#30543e" layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrizione:" wrappingWidth="166.912109375">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#30543e" layoutX="8.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="«Esistono storie che non esistono», diceva una vecchia, saggia voce fuori campo. Ma è vero: tutto è possibile, se è Maccio Capatonda a scrivere. Infatti, dopo il clamoroso successo di Libro, l'autore torna con un nuovo, sconvolgente libro dal titolo rivoluzionario: Libro 2." wrappingWidth="589.353515625">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button layoutX="510.0" layoutY="493.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="173.0" styleClass="bottone" text="Salva le modifiche" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField layoutX="484.0" layoutY="178.0" promptText="Maccio Capatonda" styleClass="textarea">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="486.0" layoutY="210.0" promptText="Biografia" styleClass="textarea">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="549.0" layoutY="243.0" prefHeight="27.0" prefWidth="116.0" promptText="21 giugno 2022" styleClass="textarea">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="464.0" layoutY="276.0" promptText="9788891834102" styleClass="textarea">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="804.0" layoutY="245.0" promptText="200" styleClass="textarea">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="819.0" layoutY="212.0" promptText="Relegato" styleClass="textarea">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="807.0" layoutY="180.0" promptText="Mondatori Electa" styleClass="textarea">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Button layoutX="718.0" layoutY="493.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="173.0" styleClass="annulla" text="Annulla" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

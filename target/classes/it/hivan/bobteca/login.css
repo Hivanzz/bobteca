@@ -1,0 +1,54 @@
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-VariableFont_slnt\,wght.ttf');
+}
+*{
+    -fx-font-family: 'Inter';
+}
+.base{
+    -fx-background-color: rgb(142, 60, 5);
+    -fx-background-image: url(img.png);
+    -fx-background-position: center;
+}
+
+.input{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 40px;
+    -fx-prompt-text-fill:white;
+}
+.input .text-input-field {
+    -fx-text-fill: white;
+}
+
+.link{
+    -fx-text-fill: white;
+}
+.link:hover{
+    -fx-text-decoration: underline;
+}
+  
+.bottone {
+    -fx-background-color: white;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 40px;
+    -fx-text-fill: #30543e;
+    -fx-background-insets: null;
+    -fx-background-radius: 40px;
+}
+
+.menu-bar {
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 1);
+}
+
+
+.menu-bar .label {
+    -fx-text-fill: #30543e;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+}

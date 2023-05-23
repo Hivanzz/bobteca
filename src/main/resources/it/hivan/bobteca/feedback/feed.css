@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-VariableFont_slnt,wght.ttf');
+}
+*{
+    -fx-font-family: 'Inter';
+}
+
+.bottone {
+    -fx-background-color: #30543e;
+    -fx-text-fill: white;
+    -fx-background-radius: 20px;
+    -fx-padding: 6px 15px;
+    -fx-border-radius: 20px;
+    -fx-border-color: transparent;
+    -fx-font-weight: 600;
+    -fx-font-size: 16px;
+    -fx-text-decoration: none;
+}
+.check .box {
+
+    -fx-background-color: #543046;
+
+    
+    }
+    
+    .check:selected .mark {
+    
+    -fx-background-color: white;
+    
+    }
+    
+    .check:selected .box {
+    
+    -fx-background-color: #30543e;
+    }
+
+.textarea{
+    -fx-background-color: #5f485665;
+    -fx-background-radius: 20px;
+    -fx-border-width: 0;
+    -fx-prompt-text-fill:rgb(52, 51, 51);
+}
+
+.menu-bar {
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 1);
+}
+
+
+.menu-bar .label {
+    -fx-text-fill: #30543e;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+}
