@@ -8,11 +8,12 @@ public class Libro {
     private String isbn;
     private String editore;
     private String formato;
+    private String descrizione;
     private int numeroPagine;
 
     // Costruttore
     public Libro(String titolo, String autore, String genere, String dataPubblicazione, String isbn,
-                 String editore, String formato, int numeroPagine) {
+                 String editore, String formato, int numeroPagine, String descrizione) {
         this.titolo = titolo;
         this.autore = autore;
         this.genere = genere;
@@ -21,6 +22,7 @@ public class Libro {
         this.editore = editore;
         this.formato = formato;
         this.numeroPagine = numeroPagine;
+        this.descrizione = descrizione;
     }
 
     // Metodi getter e setter per gli attributi
@@ -86,5 +88,13 @@ public class Libro {
 
     public void setNumeroPagine(int numeroPagine) {
         this.numeroPagine = numeroPagine;
+    }
+
+    public String getDescrizione() {
+        return this.descrizione;
+    }
+
+    public void setDescrizione(String descrizione) {
+        this.descrizione = descrizione;
     }
 }

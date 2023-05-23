@@ -49,17 +49,16 @@ public class DettaglioLibro {
     private Text descrizioneLibro;
 
     @FXML
-    public void modificaValori() {
-        String nuovoValore = "Hivanzh";
-        titolo.setText(nuovoValore);
-        autore.setText(nuovoValore);
-        genere.setText(nuovoValore);
-        dataRilascio.setText(nuovoValore);
-        isbn.setText(nuovoValore);
-        editore.setText(nuovoValore);
-        formato.setText(nuovoValore);
-        numeroPagine.setText(nuovoValore);
-        descrizioneLibro.setText(nuovoValore);
+    public void modificaValori(Libro libro) {
+        titolo.setText(libro.getTitolo());
+        autore.setText(libro.getAutore());
+        genere.setText(libro.getGenere());
+        dataRilascio.setText(libro.getDataPubblicazione());
+        isbn.setText(libro.getIsbn());
+        editore.setText(libro.getEditore());
+        formato.setText(libro.getFormato());
+        numeroPagine.setText(String.valueOf(libro.getNumeroPagine()));
+        descrizioneLibro.setText(libro.getDescrizione());
     }
     
 }

@@ -14,6 +14,7 @@ import javafx.scene.control.TextField;
 
 public class UserManager implements Serializable {
     private final static String DATABASE_FILE = "src/main/java/it/hivan/bobteca/loginData/users.ser";
+    private UserSession userSession = UserSession.getInstance();
     private static Vector<Utente> listaRegistrati = new Vector<Utente>();
     
     @FXML
@@ -23,10 +24,20 @@ public class UserManager implements Serializable {
     private TextField dataPassword;
 
     @FXML
+    private TextField oldPass;
+
+    @FXML
+    private TextField newPass;
+
+    @FXML
+    private TextField newUsername;
+
+    @FXML
     private void tryLogin() throws IOException, ClassNotFoundException {
         UserManager.caricaUtentiRegistrati();
         for(Utente user: listaRegistrati) {
             if (user.getUsername().equals(dataEmail.getText()) && user.getPassword().equals(dataPassword.getText())) {
+                userSession.setLoggedInUser(user);
                 App.setRoot("home/home");
                 break;
             }
@@ -43,6 +54,27 @@ public class UserManager implements Serializable {
             App.setRoot("login");
         }
     }
+
+    @FXML
+    private void tryChangePass() throws IOException, ClassNotFoundException {
+        String userPassword = userSession.getLoggedInUser().getPassword();
+        String oldPassL = oldPass.getText();
+        if(userPassword.equals(oldPassL)){
+            userSession.getLoggedInUser().setPassword(newPass.getText());
+            salvaUtentiRegistrati();
+            userSession.logout();
+            App.setRoot("login");
+        }
+    }
+
+    @FXML
+    private void tryChangeUsername() throws IOException, ClassNotFoundException {
+        userSession.getLoggedInUser().setUsername(newUsername.getText());
+        salvaUtentiRegistrati();
+        userSession.logout();
+        App.setRoot("login");
+    }
+
 
     // Pulsanti e collegamenti ipertestuali //
     @FXML

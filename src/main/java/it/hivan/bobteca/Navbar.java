@@ -4,6 +4,9 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 
 public class Navbar {
+    //private final DettaglioLibro controller;
+    private UserSession userSession = UserSession.getInstance();
+
     @FXML
     private void goToHome() throws IOException {
         App.setRoot("home/home");
@@ -11,17 +14,24 @@ public class Navbar {
 
     @FXML
     private void goToFeedback() throws IOException {
+        Libro libro = new Libro("Il nome del vento", "Patrick Rothfuss", "Fantasy", "01/03/2007",
+                                "9788804564512", "Mondadori", "Copertina rigida", 662, "Descrizione del libro.");
+        //controller.modificaValori(libro);
         App.setRoot("nuovo_libro_specifico/nuovo_libro_specifico");
     }
 
     @FXML
     private void goToCambioEmail() throws IOException {
-        App.setRoot("cambio_email");
+        if(userSession.isLoggedIn()) {
+            App.setRoot("cambio_email");
+        }
     }
     
     @FXML
     private void goToCambioPassword() throws IOException {
-        App.setRoot("cambio_password");
+        if(userSession.isLoggedIn()) {
+            App.setRoot("cambio_password");
+        }
     }
     
     @FXML
@@ -39,7 +49,10 @@ public class Navbar {
         App.setRoot("signin");
     }
 
-    public void testCommit() {
-        
+    @FXML
+    private void esciAccount() throws IOException {
+        userSession.logout();
+        App.setRoot("login");
     }
+
 }

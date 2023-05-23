@@ -14,31 +14,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="1073.0" stylesheets="@home.css" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <MenuBar layoutX="20.0" layoutY="22.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
-         <menus>
-            <Menu mnemonicParsing="false" text="Main">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Home" />
-                  <MenuItem mnemonicParsing="false" text="Feedback" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Account">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Cambia Email" />
-                  <MenuItem mnemonicParsing="false" text="Cambia Password" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Account Admin">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Gestione Utenti" />
-                  <MenuItem mnemonicParsing="false" text="Gestione libri" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-         </menus>
-      </MenuBar>
+      <fx:include source="../navbar/navbar.fxml" />
       <Pane layoutX="14.0" layoutY="36.0" prefHeight="541.0" prefWidth="532.0" styleClass="panelloa" stylesheets="@home.css">
          <children>
             <Text fill="#30543e" layoutX="266.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titolo" text="BobTeca" wrappingWidth="210.6522979736328">

@@ -12,21 +12,21 @@
             <items>
                <MenuItem mnemonicParsing="false" text="Home" onAction="#goToHome"/>
                <MenuItem mnemonicParsing="false" text="Feedback" onAction="#goToFeedback" />
-               <MenuItem mnemonicParsing="false" text="Esci" />
+               <MenuItem mnemonicParsing="false" text="Esci" onAction="#esciAccount"/>
             </items>
          </Menu>
          <Menu mnemonicParsing="false" text="Account">
             <items>
                <MenuItem mnemonicParsing="false" text="Cambia Email" onAction="#goToCambioEmail"/>
                <MenuItem mnemonicParsing="false" text="Cambia Password" onAction="#goToCambioPassword" />
-               <MenuItem mnemonicParsing="false" text="Esci" />
+               <MenuItem mnemonicParsing="false" text="Esci" onAction="#esciAccount"/>
             </items>
          </Menu>
          <Menu mnemonicParsing="false" text="Account Admin">
             <items>
                <MenuItem mnemonicParsing="false" text="Gestione Utenti" onAction="#goToGestioneUtenti" />
                <MenuItem mnemonicParsing="false" text="Gestione libri" onAction="#goToGestioneLibri"/>
-               <MenuItem mnemonicParsing="false" text="Esci" />
+               <MenuItem mnemonicParsing="false" text="Esci" onAction="#esciAccount"/>
             </items>
          </Menu>
       </menus>
