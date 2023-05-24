@@ -32,8 +32,8 @@ public class Navbar {
     }
     
     @FXML
-    private void goToGestioneUtenti() throws IOException {
-        App.setRoot("gestione_utenti/gestione_utenti");
+    private void goToProfiloPersonale() throws IOException {
+        App.setRoot("profilo_personale/profilo_personale");
     }
     
     @FXML

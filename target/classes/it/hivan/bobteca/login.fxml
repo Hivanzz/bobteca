@@ -53,7 +53,7 @@
       </Text>
       <TextField layoutX="118.0" layoutY="193.0" prefHeight="36.0" prefWidth="199.0" promptText="Email" styleClass="input" fx:id="dataEmail"/>
       <PasswordField layoutX="119.0" layoutY="241.0" prefHeight="36.0" prefWidth="199.0" promptText="Password" styleClass="input" fx:id="dataPassword"/>
-      <Hyperlink layoutX="118.0" layoutY="288.0" styleClass="link" text="Password Dimenticata?" />
+      <Hyperlink layoutX="118.0" layoutY="288.0" styleClass="link" text="Password Dimenticata?" onAction="#goToPasswordDimenticata"/>
       <Hyperlink layoutX="131.0" layoutY="404.0" styleClass="link" text="Non hai un account? Registrati!" onAction="#goToSignIn"/>
       <Button layoutX="119.0" layoutY="346.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="199.0" styleClass="bottone" text="Login" onAction="#tryLogin"/>
    </children>

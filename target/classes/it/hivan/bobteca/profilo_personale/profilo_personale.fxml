@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="885.0" stylesheets="@profilo_personale.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="it.hivan.bobteca.ProfiloPersonale">
+   <children>
+      <MenuBar layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Main">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Home" />
+                  <MenuItem mnemonicParsing="false" text="Feedback" />
+                  <MenuItem mnemonicParsing="false" text="Esci" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Account">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Proprio account" />
+                  <MenuItem mnemonicParsing="false" text="Cambia Email" />
+                  <MenuItem mnemonicParsing="false" text="Cambia Password" />
+                  <MenuItem mnemonicParsing="false" text="Esci" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Account Admin">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Gestione Utenti" />
+                  <MenuItem mnemonicParsing="false" text="Gestione libri" />
+                  <MenuItem mnemonicParsing="false" text="Esci" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <TableView layoutX="54.0" layoutY="277.0" prefHeight="346.0" prefWidth="817.0" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="277.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Libro" fx:id="nomeLibro"/>
+          <TableColumn prefWidth="75.0" text="Data di ritiro" fx:id="dataRitiro"/>
+            <TableColumn prefWidth="75.0" text="Data di consegna" fx:id="dataConsegna"/>
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <ImageView fitHeight="193.0" fitWidth="237.0" layoutX="56.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" styleClass="foto" AnchorPane.bottomAnchor="391.0" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="636.0" AnchorPane.topAnchor="67.0">
+         <image>
+            <Image url="@immigini/1200px-SSC_Napoli_2007.svg.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#30543e" layoutX="321.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="informazioni" text="Email:" wrappingWidth="83.92578125" AnchorPane.bottomAnchor="431.0" AnchorPane.leftAnchor="321.0" AnchorPane.rightAnchor="480.07421875" AnchorPane.topAnchor="182.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fill="#543046" layoutX="392.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="informazioni" text="Placeorder" AnchorPane.bottomAnchor="435.474609375" AnchorPane.leftAnchor="392.0" AnchorPane.rightAnchor="371.0869140625" AnchorPane.topAnchor="180.525390625" fx:id="emailPlaceHolder">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fill="#30543e" layoutX="321.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="informazioni" text="Ciao utente" wrappingWidth="549.92578125" AnchorPane.bottomAnchor="546.0" AnchorPane.leftAnchor="321.0" AnchorPane.rightAnchor="14.07421875" AnchorPane.topAnchor="67.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fill="#30543e" layoutX="321.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="informazioni" text="Qui puoi vedere i tuoi libri prenotati" wrappingWidth="549.92578125" AnchorPane.bottomAnchor="508.0" AnchorPane.leftAnchor="321.0" AnchorPane.rightAnchor="14.07421875" AnchorPane.topAnchor="105.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
+

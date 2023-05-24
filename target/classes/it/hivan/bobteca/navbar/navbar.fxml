@@ -19,12 +19,12 @@
             <items>
                <MenuItem mnemonicParsing="false" text="Cambia Email" onAction="#goToCambioEmail"/>
                <MenuItem mnemonicParsing="false" text="Cambia Password" onAction="#goToCambioPassword" />
+               <MenuItem mnemonicParsing="false" text="Profilo personale" onAction="#goToProfiloPersonale" />
                <MenuItem mnemonicParsing="false" text="Esci" onAction="#esciAccount"/>
             </items>
          </Menu>
          <Menu mnemonicParsing="false" text="Account Admin">
             <items>
-               <MenuItem mnemonicParsing="false" text="Gestione Utenti" onAction="#goToGestioneUtenti" />
                <MenuItem mnemonicParsing="false" text="Gestione libri" onAction="#goToGestioneLibri"/>
                <MenuItem mnemonicParsing="false" text="Esci" onAction="#esciAccount"/>
             </items>

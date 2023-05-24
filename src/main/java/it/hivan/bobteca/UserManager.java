@@ -10,10 +10,13 @@ import java.io.Serializable;
 import java.util.Vector;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 public class UserManager implements Serializable {
     private final static String DATABASE_FILE = "src/main/java/it/hivan/bobteca/loginData/users.ser";
+    private static final long serialVersionUID = 6845857363574396199L;
+
     private UserSession userSession = UserSession.getInstance();
     private static Vector<Utente> listaRegistrati = new Vector<Utente>();
     
@@ -33,11 +36,20 @@ public class UserManager implements Serializable {
     private TextField newUsername;
 
     @FXML
+    private TextField emailRecupera;
+
+    @FXML 
+    private PasswordField passwordRecupera;
+
+    @FXML
     private void tryLogin() throws IOException, ClassNotFoundException {
         UserManager.caricaUtentiRegistrati();
+        //listaRegistrati.add(new Utente("admin", "admin"));
+        //UserManager.salvaUtentiRegistrati();
         for(Utente user: listaRegistrati) {
             if (user.getUsername().equals(dataEmail.getText()) && user.getPassword().equals(dataPassword.getText())) {
                 userSession.setLoggedInUser(user);
+                
                 App.setRoot("home/home");
                 break;
             }
@@ -75,16 +87,16 @@ public class UserManager implements Serializable {
         App.setRoot("login");
     }
 
-
-    // Pulsanti e collegamenti ipertestuali //
     @FXML
-    private void goToSignIn() throws IOException {
-        App.setRoot("signin");
-    }
-
-    @FXML
-    private void goToLogin() throws IOException {
-        App.setRoot("login");
+    private void tryNuovaPassword() throws IOException, ClassNotFoundException{
+        caricaUtentiRegistrati();
+        for(Utente user: listaRegistrati) {
+            if(user.getUsername().equals(emailRecupera.getText())) {
+                user.setPassword(passwordRecupera.getText());
+                salvaUtentiRegistrati();
+                App.setRoot("login");
+            }
+        }
     }
 
     public static boolean controllaSeRegistrato(String username) {
@@ -110,5 +122,21 @@ public class UserManager implements Serializable {
             outputStream.writeObject(listaRegistrati);
             System.out.println("Lista utenti registrati salvata correttamente.");
         }
+    }
+
+    // Pulsanti e collegamenti ipertestuali //
+    @FXML
+    private void goToSignIn() throws IOException {
+        App.setRoot("signin");
+    }
+
+    @FXML
+    private void goToLogin() throws IOException {
+        App.setRoot("login");
+    }
+
+    @FXML
+    private void goToPasswordDimenticata() throws IOException {
+        App.setRoot("password_dimenticata");
     }
 }

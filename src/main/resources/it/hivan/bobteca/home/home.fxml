@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="1073.0" stylesheets="@home.css" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="1073.0" stylesheets="@home.css" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.hivan.bobteca.Home">
    <children>
       <fx:include source="../navbar/navbar.fxml" />
       <Pane layoutX="14.0" layoutY="36.0" prefHeight="541.0" prefWidth="532.0" styleClass="panelloa" stylesheets="@home.css">
@@ -42,7 +42,7 @@
             </Text>
             <AnchorPane layoutX="19.0" layoutY="104.0" prefHeight="392.0" prefWidth="511.0" />
          </children></Pane>
-      <Button contentDisplay="RIGHT" layoutX="590.0" layoutY="581.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="49.0" styleClass="searchbutton" text="🔎" />
-      <TextField layoutX="404.0" layoutY="581.0" prefHeight="41.0" prefWidth="186.0" promptText="Cerca..." styleClass="searchbar" />
+      <Button contentDisplay="RIGHT" layoutX="590.0" layoutY="581.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="49.0" styleClass="searchbutton" text="🔎" onAction="#goTolistaLibri"/>
+      <TextField layoutX="404.0" layoutY="581.0" prefHeight="41.0" prefWidth="186.0" promptText="Cerca..." styleClass="searchbar" fx:id="searchBar" />
    </children>
 </AnchorPane>

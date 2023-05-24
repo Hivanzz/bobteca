@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-VariableFont_slnt\,wght.ttf');
+}
+*{
+    -fx-font-family: 'Inter';
+}
+
+/* tabbella */
+.table-view {
+    -fx-background-color: #30543e37;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: #5f485665;
+    -fx-background-radius: 20px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #30543e;
+    -fx-text-fill: white;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+}
+
+.bottone {
+    -fx-background-color: #543046;
+    -fx-text-fill: white;
+    -fx-background-radius: 20px;
+    -fx-padding: 6px 15px;
+    -fx-border-radius: 20px;
+    -fx-border-color: transparent;
+    -fx-font-weight: 600;
+    -fx-font-size: 16px;
+    -fx-text-decoration: none;
+
+}
+
