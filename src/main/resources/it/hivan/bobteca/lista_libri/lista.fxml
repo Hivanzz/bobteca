@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -14,10 +10,10 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="783.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@lista.css">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="1005.0" stylesheets="@lista.css" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.hivan.bobteca.Ricerca">
    <children>
       <fx:include source="../navbar/navbar.fxml" />
-      <GridPane layoutX="200.0" layoutY="155.0" prefWidth="848.0" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+      <GridPane layoutX="200.0" layoutY="155.0" prefWidth="848.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -41,7 +37,7 @@
                   </Text>
                   <Text fill="#30543e" layoutX="239.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autore: Giovanni Storti" />
                   <Text fill="#30543e" layoutX="239.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data di uscita: 12/12/2012" />
-                  <Button layoutX="222.0" layoutY="167.0" mnemonicParsing="false" styleClass="bottone" text="Più Informazioni" />
+                  <Button layoutX="222.0" layoutY="167.0" mnemonicParsing="false" styleClass="bottone" text="Più Informazioni" onAction="#goToLibroSpecifico"/>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="card">
@@ -51,7 +47,7 @@
                         <Image url="@libro2.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="226.0" layoutY="161.0" mnemonicParsing="false" styleClass="bottone" text="Più Informazioni" />
+                  <Button layoutX="226.0" layoutY="161.0" mnemonicParsing="false" styleClass="bottone" text="Più Informazioni" onAction="#goToLibroSpecifico"/>
                   <Text fill="#30543e" layoutX="266.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Libro">
                      <font>
                         <Font size="30.0" />
@@ -75,7 +71,7 @@
                   </Text>
                   <Text fill="#30543e" layoutX="239.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autore: Giovanni Storti" />
                   <Text fill="#30543e" layoutX="239.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data di uscita: 12/12/2012" />
-                  <Button layoutX="246.0" layoutY="158.0" mnemonicParsing="false" styleClass="bottone" text="Più Informazioni" />
+                  <Button layoutX="246.0" layoutY="158.0" mnemonicParsing="false" styleClass="bottone" text="Più Informazioni" onAction="#goToLibroSpecifico"/>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="card" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -92,24 +88,10 @@
                   </Text>
                   <Text fill="#30543e" layoutX="239.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autore: Giovanni Storti" />
                   <Text fill="#30543e" layoutX="239.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data di uscita: 12/12/2012" />
-                  <Button layoutX="215.0" layoutY="158.0" mnemonicParsing="false" styleClass="bottone" text="Più Informazioni" />
+                  <Button layoutX="215.0" layoutY="158.0" mnemonicParsing="false" styleClass="bottone" text="Più Informazioni" onAction="#goToLibroSpecifico"/>
                </children>
             </AnchorPane>
          </children>
       </GridPane>
-      <AnchorPane layoutX="138.0" layoutY="543.0" prefHeight="222.0" prefWidth="729.0" styleClass="card">
-         <children>
-            <TextField layoutX="14.0" layoutY="99.0" prefHeight="39.0" prefWidth="162.0" promptText="Autore" styleClass="searchbar" />
-            <TextField layoutX="190.0" layoutY="99.0" prefHeight="39.0" prefWidth="162.0" promptText="Generi" styleClass="searchbar" />
-            <TextField layoutX="553.0" layoutY="99.0" prefHeight="39.0" prefWidth="162.0" promptText="ISBN" styleClass="searchbar" />
-            <TextField layoutX="374.0" layoutY="99.0" prefHeight="39.0" prefWidth="162.0" promptText="Editori" styleClass="searchbar" />
-            <Text layoutX="274.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Non lo trovi?, applica dei filtri!" textAlignment="CENTER" wrappingWidth="200.98583984375">
-               <font>
-                  <Font size="23.0" />
-               </font>
-            </Text>
-            <Button layoutX="287.0" layoutY="158.0" mnemonicParsing="false" styleClass="bottone" text="Invia" />
-            <Button layoutX="374.0" layoutY="158.0" mnemonicParsing="false" styleClass="bottone" text="Cancella" />
-         </children></AnchorPane>
    </children>
 </AnchorPane>

@@ -14,31 +14,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1007.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.hivan.bobteca.DettaglioLibro">
    <children>
-      <MenuBar layoutX="20.0" layoutY="22.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
-         <menus>
-            <Menu mnemonicParsing="false" text="Main">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Home" />
-                  <MenuItem mnemonicParsing="false" text="Feedback" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Account">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Cambia Email" />
-                  <MenuItem mnemonicParsing="false" text="Cambia Password" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Account Admin">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Gestione Utenti" />
-                  <MenuItem mnemonicParsing="false" text="Gestione libri" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-         </menus>
-      </MenuBar>
+      <fx:include source="../navbar/navbar.fxml" />
       <ImageView fitHeight="519.0" fitWidth="342.0" layoutX="34.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 50;" styleClass="albatros">
          <image>
             <Image url="@../lista_libri/libro.png" />
@@ -144,7 +120,7 @@
          </font>
       </Text>
       <DatePicker layoutX="408.0" layoutY="528.0" prefHeight="39.0" prefWidth="245.0" promptText="Quando?" styleClass="input" />
-      <Button layoutX="677.0" layoutY="528.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="119.0" styleClass="bottone" text="Prenota" textFill="WHITE" onAction="#modificaValori">
+      <Button layoutX="677.0" layoutY="528.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="119.0" styleClass="bottone" text="Prenota" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>

@@ -29,6 +29,5 @@ public class UserSession {
 
     public void logout() {
         loggedInUser = null;
-        // Perform any additional cleanup or tasks upon logout
     }
 }

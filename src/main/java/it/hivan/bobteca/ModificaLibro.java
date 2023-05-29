@@ -7,7 +7,7 @@ import javafx.scene.control.TextField;
 public class ModificaLibro {
     @FXML
     private void goToModificaLibro() throws IOException {
-        App.setRoot("../modifica_libro/modifica_libro");
+        App.setRoot("modifica_libro/modifica_libro");
     }
 
     @FXML

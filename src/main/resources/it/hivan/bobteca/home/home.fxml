@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -12,37 +8,27 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="1073.0" stylesheets="@home.css" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.hivan.bobteca.Home">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="595.0" stylesheets="@home.css" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.hivan.bobteca.Home">
    <children>
       <fx:include source="../navbar/navbar.fxml" />
-      <Pane layoutX="14.0" layoutY="36.0" prefHeight="541.0" prefWidth="532.0" styleClass="panelloa" stylesheets="@home.css">
+      <Pane layoutX="14.0" layoutY="36.0" prefHeight="541.0" prefWidth="573.0" styleClass="panelloa" stylesheets="@home.css">
          <children>
-            <Text fill="#30543e" layoutX="266.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titolo" text="BobTeca" wrappingWidth="210.6522979736328">
-               <font>
-                  <Font size="55.0" />
-               </font>
-            </Text>
-            <ImageView fitHeight="209.0" fitWidth="194.0" layoutX="43.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="209.0" fitWidth="194.0" layoutX="92.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@logo%20senza%20sfondo.png" />
                </image>
             </ImageView>
-            <Text fill="#30543e" layoutX="71.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="testo" text="La nostra biblioteca online chiamata Bobteca, nasce con l'obiettivo di offrire ai nostri utenti un'esperienza di lettura unica e coinvolgente. Al suo interno, migliaia di libri disponibili in un vasto assortimento di generi, dal romance alla fantascienza, dai thriller ai classici della letteratura." textAlignment="CENTER" wrappingWidth="389.06640625">
+            <Text fill="#30543e" layoutX="92.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="testo" text="La nostra biblioteca online chiamata Bobteca, nasce con l'obiettivo di offrire ai nostri utenti un'esperienza di lettura unica e coinvolgente. Al suo interno, migliaia di libri disponibili in un vasto assortimento di generi, dal romance alla fantascienza, dai thriller ai classici della letteratura." textAlignment="CENTER" wrappingWidth="389.06640625">
                <font>
                   <Font size="17.0" />
                </font>
             </Text>
-         </children></Pane>
-      <Pane layoutX="527.0" layoutY="36.0" prefHeight="541.0" prefWidth="532.0" styleClass="panellob">
-         <children>
-            <Text fill="#522f44" layoutX="84.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ecco alcuni libri che abbiamo aggiunto!">
+            <Text fill="#30543e" layoutX="287.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titolo" text="BobTeca" wrappingWidth="245.6522979736328">
                <font>
-                  <Font size="21.0" />
+                  <Font size="55.0" />
                </font>
             </Text>
-            <AnchorPane layoutX="19.0" layoutY="104.0" prefHeight="392.0" prefWidth="511.0" />
+            <Button onAction="#goToListaLibri" layoutX="250.0" layoutY="477.0" mnemonicParsing="false" styleClass="searchbutton" text="Cerca" />
          </children></Pane>
-      <Button contentDisplay="RIGHT" layoutX="590.0" layoutY="581.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="49.0" styleClass="searchbutton" text="🔎" onAction="#goTolistaLibri"/>
-      <TextField layoutX="404.0" layoutY="581.0" prefHeight="41.0" prefWidth="186.0" promptText="Cerca..." styleClass="searchbar" fx:id="searchBar" />
    </children>
 </AnchorPane>

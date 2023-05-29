@@ -12,34 +12,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="885.0" stylesheets="@profilo_personale.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="it.hivan.bobteca.ProfiloPersonale">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="885.0" stylesheets="@profilo_personale.css" xmlns="http://javafx.com/javafx/13s" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="it.hivan.bobteca.ProfiloPersonale">
    <children>
-      <MenuBar layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
-         <menus>
-            <Menu mnemonicParsing="false" text="Main">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Home" />
-                  <MenuItem mnemonicParsing="false" text="Feedback" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Account">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Proprio account" />
-                  <MenuItem mnemonicParsing="false" text="Cambia Email" />
-                  <MenuItem mnemonicParsing="false" text="Cambia Password" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Account Admin">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Gestione Utenti" />
-                  <MenuItem mnemonicParsing="false" text="Gestione libri" />
-                  <MenuItem mnemonicParsing="false" text="Esci" />
-               </items>
-            </Menu>
-         </menus>
-      </MenuBar>
+      <fx:include source="../navbar/navbar.fxml" />
       <TableView layoutX="54.0" layoutY="277.0" prefHeight="346.0" prefWidth="817.0" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="277.0">
         <columns>
           <TableColumn prefWidth="75.0" text="Libro" fx:id="nomeLibro"/>
